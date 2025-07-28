@@ -1,12 +1,12 @@
 ---
 - name: Arch Installasjon
-  hosts: allt
+  hosts: localhost 
   connection: local
   become: yes
 
   tasks:
   - name: install packages
-    package:
+    pacman:
       name:
         - htop
         - tmux
