@@ -10,7 +10,6 @@
       name:
         - htop
         - tmux
-        - vim-nox
         - emacs
 
 
