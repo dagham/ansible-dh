@@ -1,0 +1,17 @@
+---
+- name: Arch Installasjon
+  hosts: allt
+  connection: local
+  become: yes
+
+  tasks:
+  - name: install packages
+    package:
+      name:
+        - htop
+        - tmux
+        - vim-nox
+        - emacs
+
+
+  
