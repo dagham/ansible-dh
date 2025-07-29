@@ -6,8 +6,8 @@
   pre_tasks:
     - name: update repositories
       pacman:
-        update_cache:yes
-      changed_when: False
+        update_cache: yes
+        changed_when: False
 
   tasks:
     -include: tasks/packages.yml

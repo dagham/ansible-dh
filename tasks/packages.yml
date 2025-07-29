@@ -1,10 +1,5 @@
 ---
-- name: Arch Installasjon
-  hosts: localhost 
-  connection: local
-  become: yes
-
-  tasks:
+tasks:
   - name: install packages
     pacman:
       name:
@@ -14,5 +9,5 @@
         - pcmanfm
 	- unzip
 	- fontconfig
-        - 
+         
   
