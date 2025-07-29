@@ -1,0 +1,18 @@
+---
+- name: Arch Installasjon
+  hosts: localhost 
+  connection: local
+  become: yes
+
+  tasks:
+  - name: install packages
+    pacman:
+      name:
+        - nitrogen
+        - rofi
+        - emacs
+        - pcmanfm
+	- unzip
+	- fontconfig
+        - 
+  

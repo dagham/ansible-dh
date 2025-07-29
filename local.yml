@@ -1,16 +1,14 @@
 ---
-- name: Arch Installasjon
-  hosts: localhost 
+- hosts: localhost 
   connection: local
-  become: yes
+  become: true
+
+  pre_tasks:
+    - name: update repositories
+      pacman:
+        update_cache:yes
+      changed_when: False
 
   tasks:
-  - name: install packages
-    pacman:
-      name:
-        - nitrogen
-        - rofi
-        - emacs
-        - 
+    _include: tasks/packages.yml
 
-  
