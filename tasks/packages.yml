@@ -9,5 +9,6 @@ tasks:
         - pcmanfm
 	- unzip
 	- fontconfig
+	- curl
          
   
