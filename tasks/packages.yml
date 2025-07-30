@@ -1,4 +1,5 @@
 ---
+
 tasks:
   - name: install packages
     pacman:
@@ -7,8 +8,8 @@ tasks:
         - rofi
         - emacs
         - pcmanfm
-	- unzip
-	- fontconfig
-	- curl
-         
+        - unzip
+        - fontconfig
+        - curl
+      state: present
   
