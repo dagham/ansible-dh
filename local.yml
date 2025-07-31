@@ -1,15 +1,7 @@
+
 ---
-
-- hosts: localhost 
-  connection: local
-  become: true
-
-  pre_tasks:
-    - name: update repositories
-      pacman:
-        update_cache: yes
-        changed_when: False
-
+- name: Main Playbook
+  hosts: localhost
   tasks:
-    -import_tasks: tasks/packages.yml
-
+    - name: Include packages tasks
+      import_tasks: tasks/packages.yml
