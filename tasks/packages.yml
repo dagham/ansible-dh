@@ -11,4 +11,6 @@
       - fontconfig
       - curl
       - tldr
+      - exa
+      
     state: present
