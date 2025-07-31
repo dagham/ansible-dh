@@ -11,5 +11,6 @@ tasks:
         - unzip
         - fontconfig
         - curl
+        - tldr
       state: present
   
