@@ -1,16 +1,14 @@
 ---
 
-tasks:
-  - name: install packages
-    pacman:
-      name:
-        - nitrogen
-        - rofi
-        - emacs
-        - pcmanfm
-        - unzip
-        - fontconfig
-        - curl
-        - tldr
-      state: present
-  
+- name: install packages
+  pacman:
+    name:
+      - nitrogen
+      - rofi
+      - emacs
+      - pcmanfm
+      - unzip
+      - fontconfig
+      - curl
+      - tldr
+    state: present
