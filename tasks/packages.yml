@@ -12,5 +12,6 @@
       - curl
       - tldr
       - exa
+      - bat
       
     state: present
